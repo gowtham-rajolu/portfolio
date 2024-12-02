@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f33;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .social-login-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .socialcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #23272a;
+    border-radius: 8px;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .socialcontainer:hover {
+    transform: scale(1.1);
+    background: #7289da;
+  }
+  
+  .icon svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    margin-bottom: 10px;
+  }
+  
