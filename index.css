@@ -127,7 +127,7 @@
 
   /* Colors for Cards */
   .card:nth-child(3n+1) {
-    background-color: #f43f5e; /* Red */
+    background-color:transparent; /* Red */
   }
 
   .card:nth-child(3n+2) {
@@ -409,7 +409,8 @@ h2{
   padding-left: 10px;
 }
 #contact{
-  background-color:dimgray;
+  background-color:transparent;
+  color: black;
 }
 p#about{
   padding-left: 100px;
@@ -442,8 +443,11 @@ h1#skills{
 }
 header{
   height: 100vh;
-  position: relative;
   background-color: black;
-  padding: 0,0,0,0;
-  margin: 0,0,0,0;
+  position: fixed;
+}
+
+#projects{
+  background-color: transparent;
+  color: #000;
 }
