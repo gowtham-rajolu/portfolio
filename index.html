@@ -11,20 +11,53 @@
 <link rel="stylesheet" href="index.css">    
 </head>
 <body>
-  <header class="header">
-    
-  </header>
-    <button class="button" data-text="Awesome">
-        <span class="actual-text">&nbsp;uiverse&nbsp;</span>
-        <span aria-hidden="true" class="hover-text">&nbsp;uiverse&nbsp;</span>
+  <div id="menu">
+    <a id="btn-profile" href="#profile">
+    <div>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Profile&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Profile&nbsp;</span>
     </button>
-
-    <div id="menu">
-        
-
     </div>
+  </a>
+  <a id="btn-about" href="#about">
+    <div>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;About&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;About&nbsp;</span>
+    </button>
+    </div>
+  </a>
+  <a id="btn-skills" href="#skills">
+    <div>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Skills&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Skills&nbsp;</span>
+    </button>
+    </div>
+  </a>
+  <a id="btn-contact" href="#contact">
+    <div>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Contact&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Contact&nbsp;</span>
+    </button>
+    </div>
+  </a>
+  <a id="btn-projects" href="projects">
+    <div>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Projects&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Projects&nbsp;</span>
+    </button>
+    </div>
+  </a>
+</div>
 
-    <div class="intro" id="profile">
+
+<div class="bodyy">
+
+    <div class="section" id="profile">
         
         <div class="image" ><img src="gowtham.jpeg" alt=""></div>
         <div><h1 class="heading">
@@ -39,38 +72,37 @@
     </div>
     <div class="cards">
         <div class="card">
-            <section id="about">
-                <h1><u> About:</u></h1>
-                <h2>Software Developer with Interest in Cybersecurity,IoT and AI </h2>
-                <p> A Software Developer with Interest in Cybersecurity, IoT, and AI is a versatile professional skilled in building software applications while exploring emerging technologies like IoT, artificial intelligence, and cybersecurity. They focus on developing secure, innovative solutions that integrate connected devices, intelligent algorithms, and robust security measures to address modern technological challenges.</p>    
-                <h3> Education:</h3>
-                <h4> B.Tech in Computer Science</h4>
-                <p><i> Vignan's Lara Institute of Technology and Science (2022–2026)</i></p>
-            </section>
+            <section id="about" class="section">
+                        <h1><u> About:</u></h1>
+          <h2>Software Developer with Interest in Cybersecurity, IoT, AI, Photography, and Video Editing</h2>
+          <p> I am a passionate Software Developer with a keen interest in Cybersecurity, IoT, and AI. My journey in technology is focused on building innovative and secure software solutions that address modern-day challenges. I enjoy exploring emerging fields such as Internet of Things (IoT), Artificial Intelligence (AI), and Cybersecurity, and I am committed to developing systems that integrate intelligent algorithms, connected devices, and robust security features. Whether it's creating applications or tackling complex problems, I strive to push the boundaries of technology to solve real-world issues. </p>
+                          
+          <p> Beyond my technical expertise, I have a deep passion for creative arts, particularly photography and video editing. Photography allows me to capture the beauty of everyday life, telling stories through visuals, while video editing offers me the opportunity to craft compelling narratives through dynamic and engaging content. These hobbies not only give me a creative outlet but also allow me to combine my technical and artistic skills, whether I'm capturing high-quality images or editing cinematic videos. Additionally, I specialize in wedding photography and videography, where I focus on capturing the essence of the moment and creating unforgettable memories through professional photo and video work. </p>
+
+          <p> In my spare time, I enjoy exploring new technologies, attending workshops, and experimenting with photography techniques. Whether working on my next tech project or capturing a beautiful wedding moment, I am always seeking new ways to challenge myself and improve my craft. </p>
+
+          <h3> Education:</h3>
+          <h4> B.Tech in Computer Science</h4>
+          <p><i> Vignan's Lara Institute of Technology and Science (2022–2026)</i></p>
+                        
+          <h3> Interests:</h3>
+          <ul>
+              <li>Cybersecurity research and ethical hacking</li>
+              <li>Developing smart home applications and IoT solutions</li>
+              <li>Exploring AI-driven software development</li>
+              <li>Wedding photography and videography</li>
+              <li>Photo and video editing for creative storytelling</li>
+              <li>Continuous learning and experimentation with new technology trends</li>
+          </ul>
+              
+
+
+        </section>
         </div>
         <div class="card">
-          <section id="skills">
+          <section id="skills" class="section">
               <h1><u>Skills:</u></h1>
               <div class="container">
-                <div class="skill-box">
-                  <span class="title">Pyhton</span>
-              
-                  <div class="skill-bar">
-                    <span class="skill-per html">
-                      <span class="tooltip">80%</span>
-                    </span>
-                  </div>
-                </div>
-              
-                <div class="skill-box">
-                  <span class="title">Php</span>
-              
-                  <div class="skill-bar">
-                    <span class="skill-per css">
-                      <span class="tooltip">30%</span>
-                    </span>
-                  </div>
-                </div>
                 <div class="skill-box">
                   <span class="title">Java</span>
               
@@ -81,7 +113,25 @@
                   </div>
                 </div>
                 <div class="skill-box">
-                  <span class="title">C++</span>
+                  <span class="title">Pyhton</span>
+              
+                  <div class="skill-bar">
+                    <span class="skill-per html">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">C,C++</span>
+              
+                  <div class="skill-bar">
+                    <span class="skill-per html">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">html,css,js</span>
               
                   <div class="skill-bar">
                     <span class="skill-per nodejs">
@@ -89,12 +139,28 @@
                     </span>
                   </div>
                 </div>
-              </div>
               
-          </section>
+              <div class="skill-box">
+                <span class="title">Php</span>
+            
+                <div class="skill-bar">
+                  <span class="skill-per css">
+                    <span class="tooltip">30%</span>
+                  </span>
+                </div>
+              </div>
+              </div>
+              <h3> Skills & Interests:</h3>
+              <ul>
+                  <li><strong>Programming Languages:</strong>Java, Python, C++, C, JS, php </li>
+                  <li><strong>Technologies:</strong> IoT, AI, Machine Learning, Cybersecurity, Cloud Computing</li>
+                  <li><strong>Tools & Software:</strong> Git, Docker, Visual Studio Code,Adobe Aftereffects, Adobe Photoshop, EDIUS</li>
+                  <li><strong>Hobbies:</strong> Wedding Photography, Portrait Photography, Event Photography, Video Editing </li>
+                  <li><strong>Interests:</strong> Cybersecurity research, developing smart home applications, creating AI-driven solutions, and experimenting with IoT devices.</li>
+              </ul>          </section>
       </div>
         <div class="card">
-            <section id="contact">
+            <section id="contact" class="section">
                 <h1><u>Contact:</u></h1>
 
                 <ul class="example-2">
@@ -121,6 +187,16 @@
                       </svg>
                     </a>
                     <div class="tooltip">Gowtham rajolu
+                    </div>
+                  </li>
+                  <li class="icon-content">
+                    <a href="mailto:gowthamrajolu@example.com" aria-label="youtube" data-social="youtube">
+                      <div class="filled"></div>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
+                        <path d="M 21 20 C 15.488666 20 11 24.488666 11 30 L 11 74 C 11 77.301625 13.698375 80 17 80 L 30 80 A 1.0001 1.0001 0 0 0 31 79 L 31 50.091797 L 49.400391 63.800781 C 49.580391 63.930781 49.79 64 50 64 C 50.21 64 50.409844 63.940547 50.589844 63.810547 L 69 50.515625 L 69 79 A 1.0001 1.0001 0 0 0 70 80 L 83 80 C 86.301625 80 89 77.301625 89 74 L 89 30 C 89 24.488666 84.511334 20 79 20 L 78.990234 20 C 76.901015 20 74.776479 20.657697 72.978516 22.011719 L 50 39.328125 L 27.021484 22.011719 C 25.223521 20.657697 23.098985 20 21.009766 20 L 21 20 z M 21 22 L 21.009766 22 C 22.680546 22 24.376323 22.523397 25.818359 23.609375 L 29 26.007812 L 29 46.724609 L 13 34.798828 L 13 30 C 13 25.569334 16.569334 22 21 22 z M 78.990234 22 L 79 22 C 83.430666 22 87 25.569334 87 30 L 87 34.798828 L 71 46.724609 L 71 26.007812 L 74.181641 23.609375 C 75.623677 22.523397 77.319454 22 78.990234 22 z M 30 26.759766 L 49.263672 41.277344 A 1.0001 1.0001 0 0 0 49.951172 41.585938 A 1.0001 1.0001 0 0 0 50.001953 41.587891 A 1.0001 1.0001 0 0 0 50.728516 41.283203 L 70 26.759766 L 70 47.322266 L 50.009766 61.759766 L 30 47.320312 L 30 26.759766 z M 66.509766 33.275391 A 0.50005 0.50005 0 0 0 66.199219 33.380859 L 60.279297 37.839844 A 0.50058879 0.50058879 0 1 0 60.882812 38.638672 L 66.800781 34.179688 A 0.50005 0.50005 0 0 0 66.509766 33.275391 z M 13 36.046875 L 29 47.972656 L 29 48.794922 L 29 49 L 29 78 L 17 78 C 14.779625 78 13 76.220375 13 74 L 13 36.046875 z M 87 36.046875 L 87 74 C 87 76.220375 85.220375 78 83 78 L 71 78 L 71 49.070312 L 71 48.535156 A 0.50005 0.50005 0 0 0 71 48.5 L 71 47.972656 L 87 36.046875 z M 58.992188 38.939453 A 0.50005 0.50005 0 0 0 58.681641 39.044922 L 56.904297 40.382812 A 0.50005 0.50005 0 1 0 57.505859 41.181641 L 59.283203 39.84375 A 0.50005 0.50005 0 0 0 58.992188 38.939453 z M 42.474609 40.056641 A 0.50005 0.50005 0 0 0 42.199219 40.958984 L 44.246094 42.501953 A 0.50005 0.50005 0 1 0 44.847656 41.703125 L 42.800781 40.160156 A 0.50005 0.50005 0 0 0 42.474609 40.056641 z M 55.617188 41.482422 A 0.50005 0.50005 0 0 0 55.306641 41.585938 L 51.96875 44.101562 A 0.50005 0.50005 0 1 0 52.570312 44.898438 L 55.908203 42.384766 A 0.50005 0.50005 0 0 0 55.617188 41.482422 z M 46.119141 42.800781 A 0.50005 0.50005 0 0 0 45.84375 43.705078 L 48.757812 45.898438 A 0.50005 0.50005 0 1 0 49.359375 45.101562 L 46.445312 42.90625 A 0.50005 0.50005 0 0 0 46.119141 42.800781 z M 16.492188 43.992188 A 0.50005 0.50005 0 0 0 16 44.5 L 16 51.5 A 0.50005 0.50005 0 1 0 17 51.5 L 17 44.5 A 0.50005 0.50005 0 0 0 16.492188 43.992188 z M 16.492188 53.992188 A 0.50005 0.50005 0 0 0 16 54.5 L 16 55.5 A 0.50005 0.50005 0 1 0 17 55.5 L 17 54.5 A 0.50005 0.50005 0 0 0 16.492188 53.992188 z M 16.492188 57.992188 A 0.50005 0.50005 0 0 0 16 58.5 L 16 60.5 A 0.50005 0.50005 0 1 0 17 60.5 L 17 58.5 A 0.50005 0.50005 0 0 0 16.492188 57.992188 z M 16.492188 62.992188 A 0.50005 0.50005 0 0 0 16 63.5 L 16 73.5 C 16 74.322531 16.677469 75 17.5 75 L 24.5 75 A 0.50005 0.50005 0 1 0 24.5 74 L 17.5 74 C 17.218531 74 17 73.781469 17 73.5 L 17 63.5 A 0.50005 0.50005 0 0 0 16.492188 62.992188 z"></path>
+                        </svg>
+                    </a>
+                    <div class="tooltip">gowthamrajolu@gmail.com
                     </div>
                   </li>
                   <li class="icon-content">
@@ -188,45 +264,163 @@
                     <div class="tooltip">@gowtham_nani_
                     </div>
                   </li>
+                  <li class="icon-content">
+                    <a href="https://wa.me/919182524219" aria-label="whatsapp" data-social="whatsapp">
+                      <div class="filled"></div>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                        <path fill-rule="evenodd" d="M 24.503906 7.503906 C 22.246094 5.246094 19.246094 4 16.050781 4 C 9.464844 4 4.101563 9.359375 4.101563 15.945313 C 4.097656 18.050781 4.648438 20.105469 5.695313 21.917969 L 4 28.109375 L 10.335938 26.445313 C 12.078125 27.398438 14.046875 27.898438 16.046875 27.902344 L 16.050781 27.902344 C 22.636719 27.902344 27.996094 22.542969 28 15.953125 C 28 12.761719 26.757813 9.761719 24.503906 7.503906 Z M 16.050781 25.882813 L 16.046875 25.882813 C 14.265625 25.882813 12.515625 25.402344 10.992188 24.5 L 10.628906 24.285156 L 6.867188 25.269531 L 7.871094 21.605469 L 7.636719 21.230469 C 6.640625 19.648438 6.117188 17.820313 6.117188 15.945313 C 6.117188 10.472656 10.574219 6.019531 16.054688 6.019531 C 18.707031 6.019531 21.199219 7.054688 23.074219 8.929688 C 24.949219 10.808594 25.980469 13.300781 25.980469 15.953125 C 25.980469 21.429688 21.523438 25.882813 16.050781 25.882813 Z M 21.496094 18.445313 C 21.199219 18.296875 19.730469 17.574219 19.457031 17.476563 C 19.183594 17.375 18.984375 17.328125 18.785156 17.625 C 18.585938 17.925781 18.015625 18.597656 17.839844 18.796875 C 17.667969 18.992188 17.492188 19.019531 17.195313 18.871094 C 16.894531 18.722656 15.933594 18.40625 14.792969 17.386719 C 13.90625 16.597656 13.304688 15.617188 13.132813 15.320313 C 12.957031 15.019531 13.113281 14.859375 13.261719 14.710938 C 13.398438 14.578125 13.5625 14.363281 13.710938 14.1875 C 13.859375 14.015625 13.910156 13.890625 14.011719 13.691406 C 14.109375 13.492188 14.058594 13.316406 13.984375 13.167969 C 13.910156 13.019531 13.3125 11.546875 13.0625 10.949219 C 12.820313 10.367188 12.574219 10.449219 12.390625 10.4375 C 12.21875 10.429688 12.019531 10.429688 11.820313 10.429688 C 11.621094 10.429688 11.296875 10.503906 11.023438 10.804688 C 10.75 11.101563 9.980469 11.824219 9.980469 13.292969 C 9.980469 14.761719 11.050781 16.183594 11.199219 16.382813 C 11.347656 16.578125 13.304688 19.59375 16.300781 20.886719 C 17.011719 21.195313 17.566406 21.378906 18 21.515625 C 18.714844 21.742188 19.367188 21.710938 19.882813 21.636719 C 20.457031 21.550781 21.648438 20.914063 21.898438 20.214844 C 22.144531 19.519531 22.144531 18.921875 22.070313 18.796875 C 21.996094 18.671875 21.796875 18.597656 21.496094 18.445313 Z"></path>
+                        </svg>
+                    </a>
+                    <div class="tooltip">+91 9182524219
+                    </div>
+                  </li>
                 </ul>
                 
 
             </section>
         </div>
         <div class="card">
-          <section id="projects">
-            <h1>Projects:</h1>
-              <div id="v-a">
-                  <h2>●	Voice-Based Virtual Assistant</h2>
-                <p>Built an assistant with Smart Home Control, WhatsApp/Email integration, and multilingual support, improving home automation efficiency by 40%.
-                  Automated daily tasks, saving users an estimated 2-3 hours of manual work weekly.
-                  Provided real-time weather and news updates, enhancing user convenience for planning activities.
-                  Integrated ChatGPT for enhanced conversations, resulting in a 30% increase in user engagement during beta testing.
-                  10/2024 - 10/2024
-                  </p>
+          <section id="projects" class="section">
+              <div class="card">
+                <h1>Projects:</h1>
+                <h2><i><u>software projects:</u></i></h2>
+                <h2>● Voice-Based Virtual Assistant</h2>
+                <p>Objective: This project aims to develop a voice-based virtual assistant that can assist with various tasks on a computer or smart home system. The assistant responds to voice commands and provides functionalities such as launching applications, managing files, sending emails, providing weather updates, and much more.</p>
+                
+                <p>Working Principle:</p>
+                <p>The virtual assistant is powered by an advanced voice recognition system. Using libraries like pywhatkit, Dialogflow, and NLTK, the assistant listens to voice commands and processes them to perform tasks. It integrates with multiple APIs to deliver features such as:</p>
+                
+                <ul>
+                  <li>Smart Home Control (using Arduino)</li>
+                  <li>Launching Desktop Applications</li>
+                  <li>WhatsApp Integration</li>
+                  <li>Email Integration</li>
+                  <li>Personalized Greetings</li>
+                  <li>Multilingual Support (Google Translate API)</li>
+                  <li>Weather Updates</li>
+                  <li>News Updates</li>
+                  <li>Reminders and To-Do Lists</li>
+                  <li>File Management (Search, Create, Delete, etc.)</li>
+                  <li>Voice Command Feedback</li>
+                  <li>ChatGPT Integration for enhanced conversations</li>
+                  <li>Voice-Activated Code Execution</li>
+                  <li>Task Automation (Clicking, Typing, etc.)</li>
+                  <li>Social Media Integration (Facebook, Instagram)</li>
+                </ul>
+                
+                <p>Based on the user's voice input, the assistant can understand commands and execute them through integration with various platforms and services, making it an intelligent, responsive, and multifunctional tool for daily tasks.</p>
+                
               </div>
-              <div>
-                <h2>●	Hospital Locator</h2>
-                <p>Developed a web app using HTML, CSS, and JavaScript that helps users find hospitals within a specified radius with Google Maps API integration.
-                  06/2024 - 06/2024
-                </p>
+              <div class="card">
+                <h2>● Hospital Locator</h2>
+                  <p>Objective: This React app is designed to find hospitals within a specified radius of a given city name using a third-party API. It allows users to input a city name and a radius, and then displays a list of hospitals located within the defined area.</p>
+
+                  <p>Working Principle:</p>
+                  <ul>
+                    <li>The app takes input from the user, including the city name and the radius in kilometers.</li>
+                    <li>Using an API (such as Google Places API or a similar service), the app sends a request to fetch hospitals within the given radius from the provided city.</li>
+                    <li>The API returns a list of hospitals along with details like their names, addresses, and distance from the center of the city.</li>
+                    <li>The app then displays this information to the user in a user-friendly format, including options for additional details like contact numbers or directions.</li>
+                  </ul>
+                  <p>Components: React, API (Google Places API or similar), Axios (for API calls), and UI components for displaying hospital data.</p>
+
               </div>
-              <div>
-                <h2>●	Weather Web Application</h2>
-                <p>Developed a responsive web application that provides real-time weather information based on user location or specified city.
-                  Integrated a reliable weather API to display current temperature, humidity, wind speed, and a 5-day forecast.
-                  04/2023 - 04/2023
-                </p>
+              <div class="card">
+                <h2>● Weather Web App</h2>
+                  <p>Objective: This project is designed to provide real-time weather updates for any given city. By making API calls to a weather service, the app retrieves current weather information, including temperature, humidity, wind speed, and other details, and displays them to the user in an interactive and user-friendly interface.</p>
+
+                  <p>Working Principle:</p>
+                  <p>The weather web app uses JavaScript to interact with a weather API (such as OpenWeatherMap API or WeatherStack). When the user enters the name of a city, the app sends a request to the weather API to fetch the weather data. The received data is then parsed and displayed on the webpage in an easily understandable format. The app provides key weather information such as:</p>
+
+                  <ul>
+                    <li>Current Temperature</li>
+                    <li>Humidity Levels</li>
+                    <li>Wind Speed</li>
+                    <li>Weather Conditions (Clear, Rainy, etc.)</li>
+                    <li>Weather Forecast for the Next Few Days</li>
+                  </ul>
+
+                  <p>By integrating the weather API with JavaScript, the app dynamically updates the weather information and allows the user to check weather conditions for any city in real-time. The app also provides options to visualize the data through icons or graphical representations for an enhanced user experience.</p>
+
               </div>
-              <div>
-                <h2>●	Currency Converter</h2>
-                <p>Designed an app using HTML, CSS, and JavaScript for converting amounts between currencies with integration of a Currency Exchange API.
-                  Enhanced user experience by optimizing the app for quick conversions, reducing average processing time by 20%.
-                  08/2023 - 08/2023
-              </p>
+              <div class="card">
+                <h2>● Currency Converter Web Application</h2>
+                  <p>Objective: This project is designed to convert currency values between different currencies using real-time exchange rates fetched through API calls. The app allows users to input an amount and select the currencies to convert from and to, and it will display the converted amount instantly.</p>
+
+                  <p>Working Principle:</p>
+                  <p>The currency converter web app uses JavaScript to interact with a currency exchange API (such as ExchangeRate-API or CurrencyLayer). When the user enters an amount and selects the currencies they want to convert, the app sends a request to the API to fetch the latest exchange rates for the selected currencies. The response contains the exchange rates, which are then used to calculate the converted amount and display it on the webpage.</p>
+
+                  <p>The app provides the following functionalities:</p>
+                  <ul>
+                    <li>Real-time currency conversion based on up-to-date exchange rates</li>
+                    <li>Ability to select currencies for both "from" and "to" fields</li>
+                    <li>Dynamic conversion with an input field for the amount</li>
+                    <li>Displaying the converted amount instantly</li>
+                  </ul>
+
+                  <p>With the use of JavaScript and API calls, the app is able to fetch live exchange rates, making it highly accurate and useful for anyone who needs to convert currencies quickly and easily. The app’s simple and interactive interface ensures a smooth user experience for all users.</p>
+
+              </div>
+              <div class="card">
+                <h2><u><i>Hardware projects:</i></u></h2>
+                <h2>● Smart Street Light</h2>
+                <p>Objective: This project aims to automate street lighting based on ambient light levels. Using a light-dependent resistor (LDR) sensor, the street lights are programmed to turn on at dusk and turn off at dawn. The Arduino reads the LDR sensor's value and controls the street lights accordingly.</p>
+
+                <p>Working Principle:</p>
+                <ul>
+                  <li>The LDR sensor detects the amount of light falling on it.</li>
+                  <li>When the light falls below a certain threshold (indicating dusk or night), the Arduino triggers a relay to turn on the street lights.</li>
+                  <li>In the morning, when the light intensity increases, the lights turn off.</li>
+                </ul>
+                <p>Components: Arduino, LDR sensor, relay module, street light bulbs (LED), and power supply.</p>
+              </div>
+              <div class="card">
+                <h2>● Water Tank Water Level Detection using Ultrasonic Sensor</h2>
+                <p>Objective: This project is designed to monitor the water level in a water tank. An ultrasonic sensor is used to measure the distance between the sensor and the water surface, providing a real-time reading of the tank’s water level.</p>
+
+                <p>Working Principle:</p>
+                <ul>
+                  <li>The ultrasonic sensor emits sound waves, which bounce off the water surface and return to the sensor.</li>
+                  <li>The Arduino calculates the distance by measuring the time it takes for the sound waves to return.</li>
+                  <li>Based on the distance, the water level is determined. If the water level is low, a pump can be turned on, or if it’s too high, an alarm can be activated.</li>
+                </ul>
+                <p>Components: Arduino, ultrasonic sensor (HC-SR04), water pump (optional), buzzer (optional), and display (optional for showing the water level).</p>
+              </div>
+              <div class="card">
+                <h2>● Burger Alarm using PIR Sensor</h2>
+                <p>Objective: This project uses a Passive Infrared (PIR) sensor to detect motion in a burger preparation area, triggering an alarm if someone approaches the station.</p>
+                
+                <p>Working Principle:</p>
+                <ul>
+                  <li>The PIR sensor detects human motion based on infrared radiation emitted by the body.</li>
+                  <li>When a person enters the detection zone, the PIR sensor sends a signal to the Arduino.</li>
+                  <li>The Arduino activates an alarm (e.g., a buzzer or siren) to alert the presence of someone at the burger station.</li>
+                </ul>
+                <p>Components: Arduino, PIR sensor, buzzer, and optional LEDs for visual indication.</p>
               </div>
           </section>
         </div>
     </div>
+    
+    </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const targetButton = document.querySelector(`#btn-${entry.target.id} .button`);
+    if (entry.isIntersecting) {
+      targetButton.classList.add("active");
+    } else {
+      targetButton.classList.remove("active");
+    }
+  });
+});
+
+// Attach the observer to all sections
+document.querySelectorAll(".section").forEach((section) => {
+  observer.observe(section);
+});
+
+
+    </script>
 </body>
 </html>

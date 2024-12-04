@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pure CSS Vertical Navigation</title>
-  <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+#sliding-menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+#sliding-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sliding-menu li {
+  margin: 10px 0;
+}
+
+#sliding-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  display: block;
+  border-radius: 3px;
+  transition: background 0.3s;
+  
+}
+
+#sliding-menu a.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.section {
+  height: 100vh;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px;
+}
+
+    </style>
 </head>
 <body>
-  <div class="contenedor">
-    <form>
-      <!-- Inputs for Navigation -->
-      <input type="radio" id="Slide1" name="slider" titulo="Home" autofocus checked>
-      <input type="radio" id="Slide2" name="slider" titulo="Features">
-      <input type="radio" id="Slide3" name="slider" titulo="Adding Pages">
-      <input type="radio" id="Slide4" name="slider" titulo="+More">
-      <input type="radio" id="Slide5" name="slider" titulo="About">
-      <input type="radio" id="Slide6" name="slider" titulo="Dummy Page">
-      <input type="radio" id="Slide7" name="slider" titulo="Dummy Page">
+    <nav id="sliding-menu">
+        <ul>
+            <li><a href="#section1" data-section="section1">Section 1</a></li>
+            <li><a href="#section2" data-section="section2">Section 2</a></li>
+            <li><a href="#section3" data-section="section3">Section 3</a></li>
+            <li><a href="#section4" data-section="section4">Section 4</a></li>
+        </ul>
+    </nav>
 
-      <!-- Labels for Each Page -->
-      <div class="labels">
-        <label for="Slide1" id="Slide1" class="Slide">
-          <div class="content">
-            <h1><strong>Pure CSS</strong> one page vertical navigation</h1>
-            <div class="icon">
-              <span><i class="fa fa-keyboard-o"></i> Use keyboard</span>
-            </div>
-          </div>
-        </label>
-        <label for="Slide2" id="Slide2" class="Slide">
-          <div class="content">
-            <h1>Features</h1>
-            <div class="block">
-              <span><i class="fa fa-hashtag"></i><br><strong>No JS</strong><br>CSS Rules!</span>
-            </div>
-          </div>
-        </label>
-        <label for="Slide3" id="Slide3" class="Slide">
-          <div class="content">
-            <h1>Adding Pages</h1>
-            <div class="block">
-              <ol>
-                <li>Add page titles in the pageTitle array.</li>
-                <li>Update $npages in CSS.</li>
-              </ol>
-            </div>
-          </div>
-        </label>
-        <label for="Slide4" id="Slide4" class="Slide">
-          <div class="content">
-            <h1>+More</h1>
-            <div class="block">
-              <span><a href="https://example.com" target="_blank">Example Link</a></span>
-            </div>
-          </div>
-        </label>
-        <label for="Slide5" id="Slide5" class="Slide">
-          <div class="content">
-            <h1>About</h1>
-            <div class="block">
-              <span>
-                <a href="https://dribbble.com" target="_blank"><i class="fa fa-dribbble"></i> Dribbble</a>
-              </span>
-              <span>
-                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
-              </span>
-            </div>
-          </div>
-        </label>
-        <label for="Slide6" id="Slide6" class="Slide">
-          <div class="content">
-            <h1>Dummy Page</h1>
-            <div class="block">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </label>
-        <label for="Slide7" id="Slide7" class="Slide">
-          <div class="content">
-            <h1>Dummy Page</h1>
-            <div class="block">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </label>
-      </div>
-    </form>
-  </div>
+    <div id="section1" class="section">Section 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 ContentSection 1 Content</div>
+    <div id="section2" class="section">Section 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 ContentSection 2 Content</div>
+    <div id="section3" class="section">Section 3 ContentSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 ContenSection 3 Conten</div>
+    <div id="section4" class="section">Section 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 ContentSection 4 Content</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+    const menuLinks = document.querySelectorAll("#sliding-menu a");
+
+    // Highlight the menu link corresponding to the current section
+    const highlightMenu = () => {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        menuLinks.forEach(link => link.classList.remove("active"));
+        menuLinks[index].classList.add("active");
+    };
+
+    // Scroll to the appropriate section when a menu link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener("click", event => {
+            event.preventDefault();
+            const section = document.querySelector(`#${link.getAttribute("data-section")}`);
+            section.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+
+    window.addEventListener("scroll", highlightMenu);
+});
+
+    </script>
 </body>
 </html>

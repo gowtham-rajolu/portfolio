@@ -1,17 +1,4 @@
 /*header*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* name header*/
 /* From Uiverse.io by satyamchaudharydev */ 
 /* === removing default button style ===*/
@@ -27,7 +14,7 @@
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
+  
   --animation-color: #37FF8B;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -58,7 +45,10 @@
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-
+.button.active .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
 
 
 
@@ -68,7 +58,7 @@
 /* From Uiverse.io by tsd29142 */ 
 .photo {
   height: 250px;
-  width: 190px;
+  width: 100px;
   background-image: linear-gradient(to top,   #210c93, #0d117a, #011160, #010e47, #07052e);
   box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px;
   transform-style: preserve-3d;
@@ -101,9 +91,11 @@
     border-radius: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    color: white;
+    color: black;
     cursor:text;
     transition: 400ms;
+    margin-top: 100px;
+    padding-left: 100px;
   }
 
   /* Hover Effect */
@@ -118,10 +110,12 @@
 
   .cards .card:hover {
     transform: scale(1.1, 1.1);
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .cards:hover > .card:not(:hover) {
-    filter: blur(10px);
+    
     transform: scale(0.9, 0.9);
   }
 
@@ -330,7 +324,10 @@ ul {
 .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
   background-color: #0274b3;
 }
-
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #25d366;
+}
 .example-2 .icon-content a[data-social="github"] .filled,
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
   background-color: #24262a;
@@ -374,7 +371,6 @@ body{
   background-size: 55px 55px;
   /*background-repeat: no-repeat;*/
   
-  
 }
 .heading{
     align-items: center;
@@ -393,11 +389,6 @@ img{
 
 img:hover {
   transform: scale(1.1); /* Increases size by 10% */
-}
-.intro{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 h2{
   padding-left: 5px;
@@ -438,16 +429,27 @@ h1#skills{
   color: #000000;
   margin-top: 10px;
 }
-.intro{
-  margin-top: 50px;
-}
-header{
-  height: 100vh;
-  background-color: black;
-  position: fixed;
-}
+
 
 #projects{
   background-color: transparent;
   color: #000;
+}
+#menu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 10px;
+}
+#profile{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-left: 150px;
+}
+#projects{
+ 
+ margin-top: 100px;
 }
