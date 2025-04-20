@@ -252,15 +252,15 @@ ul {
 }
 
 .example-2 {
-  display: flex;
+  display:list-item;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
 }
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
-  padding: 0.5rem;
+  padding: 10px;
 }
 .example-2 .icon-content .tooltip {
   position: absolute;
