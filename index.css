@@ -1,7 +1,4 @@
-/*header*/
-/* name header*/
-/* From Uiverse.io by satyamchaudharydev */ 
-/* === removing default button style ===*/
+/* === Base Styles === */
 .button {
   margin: 0;
   height: auto;
@@ -10,11 +7,8 @@
   border: none;
   cursor: pointer;
 }
-
-/* button styling */
 .button {
   --border-right: 6px;
-  
   --animation-color: #37FF8B;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -26,7 +20,6 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -39,107 +32,69 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
-}
-
+.button:hover .hover-text,
 .button.active .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
-
-
-
-
-
-/* From Uiverse.io by tsd29142 */ 
+/* === Photo Animation === */
 .photo {
   height: 250px;
   width: 100px;
-  background-image: linear-gradient(to top,   #210c93, #0d117a, #011160, #010e47, #07052e);
+  background-image: linear-gradient(to top, #210c93, #0d117a, #011160, #010e47, #07052e);
   box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px;
   transform-style: preserve-3d;
-  transform: perspective(400px)
-  rotateX(60deg)
-  rotateZ(-30deg);
+  transform: perspective(400px) rotateX(60deg) rotateZ(-30deg);
   border-radius: 10px;
   transition: transform 2s;
 }
-
 .photo:hover {
   transform: rotateY(19deg);
-}  
-  
-/*above for photo animation*/  
-  
-  
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    margin: 0px;
-  }
+}
 
-  /* General Card Styles */
-  .cards .card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: black;
-    cursor:text;
-    transition: 400ms;
-    margin-top: 100px;
-    padding-left: 100px;
-  }
+/* === Cards === */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  margin: 0px;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  padding-left: 100px;
+  color: black;
+  cursor: text;
+  transition: 400ms;
+}
+.cards .card:hover {
+  transform: scale(1.1);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.cards:hover > .card:not(:hover) {
+  transform: scale(0.9);
+}
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+.card:nth-child(3n+1),
+.card:nth-child(3n+2),
+.card:nth-child(3n) {
+  background-color: transparent;
+}
 
-  /* Hover Effect */
-  .cards .card p.tip {
-    font-size: 1em;
-    font-weight: 700;
-  }
-
-  .cards .card p.second-text {
-    font-size: 0.7em;
-  }
-
-  .cards .card:hover {
-    transform: scale(1.1, 1.1);
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .cards:hover > .card:not(:hover) {
-    
-    transform: scale(0.9, 0.9);
-  }
-
-  /* Colors for Cards */
-  .card:nth-child(3n+1) {
-    background-color:transparent; /* Red */
-  }
-
-  .card:nth-child(3n+2) {
-    background-color:transparent; /* Blue */
-  }
-
-  .card:nth-child(3n) {
-    background-color:transparent; /* Green */
-  }
-  html {
-    scroll-behavior:smooth;
-  }
-
-
-
-
-  /*skills*/
-/* From Uiverse.io by Juanes200122 */ 
+/* === Skills === */
 .container {
   position: relative;
   max-width: 500px;
@@ -150,19 +105,16 @@
   border-radius: 7px;
   user-select: none;
 }
-
 .container .skill-box {
   width: 100%;
   margin: 25px 0;
 }
-
 .skill-box .title {
   display: block;
   font-size: 14px;
   font-weight: 600;
   color: #333;
 }
-
 .skill-box .skill-bar {
   height: 8px;
   width: 100%;
@@ -170,53 +122,24 @@
   margin-top: 6px;
   background: rgba(0, 0, 0, 0.1);
 }
-
 .skill-bar .skill-per {
   position: relative;
   display: block;
   height: 100%;
   width: 90%;
   border-radius: 6px;
-  background: #000000;
+  background: #000;
   animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
 }
-
-.skill-per.html {
-  /*progreso de las diferentes lenguajes*/
-  width: 80%;
-  animation-delay: 0.1s;
-}
-
-.skill-per.css {
-  /*progreso de las diferentes lenguajes*/
-  width: 30%;
-  animation-delay: 0.1s;
-}
-
-.skill-per.java {
-  /*progreso de las diferentes lenguajes*/
-  width: 90%;
-  animation-delay: 0.4s;
-}
-
-.skill-per.nodejs {
-  /*progreso de las diferentes lenguajes*/
-  width: 70%;
-  animation-delay: 0.3s;
-}
-
+.skill-per.html { width: 80%; animation-delay: 0.1s; }
+.skill-per.css { width: 30%; animation-delay: 0.1s; }
+.skill-per.java { width: 90%; animation-delay: 0.4s; }
+.skill-per.nodejs { width: 70%; animation-delay: 0.3s; }
 @keyframes progress {
-  0% {
-    width: 0;
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% { width: 0; opacity: 1; }
+  100% { opacity: 1; }
 }
-
 .skill-per .tooltip {
   position: absolute;
   right: -14px;
@@ -226,11 +149,9 @@
   color: #fff;
   padding: 2px 6px;
   border-radius: 3px;
-  background: #000000;
-
+  background: #000;
   z-index: 1;
 }
-
 .tooltip::before {
   content: "";
   position: absolute;
@@ -238,21 +159,17 @@
   bottom: -2px;
   height: 10px;
   width: 10px;
-  z-index: -1;
-  background: #000000;
+  background: #000;
   transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
 }
 
-  
-
-/*contact*/
-/* From Uiverse.io by wilsondesouza */ 
+/* === Contact Section === */
 ul {
   list-style: none;
 }
-
 .example-2 {
-  display:list-item;
+  display: list-item;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
@@ -278,7 +195,6 @@ ul {
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  width: fit-content;
   top: -50px;
 }
 .example-2 .icon-content a {
@@ -295,20 +211,16 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 .example-2 .icon-content a:hover {
+  color: white;
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
 .example-2 .icon-content a svg {
-  position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
-.example-2 .icon-content a:hover {
-  color: white;
-}
 .example-2 .icon-content a .filled {
   position: absolute;
-  top: auto;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -319,129 +231,105 @@ ul {
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
-
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+[data-social="linkedin"] .filled,
+[data-social="linkedin"] ~ .tooltip {
   background-color: #0274b3;
 }
-.example-2 .icon-content a[data-social="whatsapp"] .filled,
-.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+[data-social="whatsapp"] .filled,
+[data-social="whatsapp"] ~ .tooltip {
   background-color: #25d366;
 }
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+[data-social="github"] .filled,
+[data-social="github"] ~ .tooltip {
   background-color: #24262a;
 }
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
+[data-social="instagram"] .filled,
+[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
 }
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+[data-social="youtube"] .filled,
+[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
 }
 
-
-
-
-
-
-.icons{
-    display:inline-flex;
-    margin: 0px;
-    padding-left: 20px;
-    position: fixed; 
-    
+/* === General Styling === */
+.icons {
+  display: inline-flex;
+  margin: 0;
+  padding-left: 20px;
+  position: fixed;
 }
-body{
-    width: 100%;
+body {
+  width: 100%;
   height: 100%;
   --color: #E1E1E1;
   background-color: #F3F3F3;
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
   background-size: 55px 55px;
-  /*background-repeat: no-repeat;*/
-  
 }
-.heading{
-    align-items: center;
-    display: flex;
-    margin-top: 200px;
-    font-size: 150px;
+.heading {
+  align-items: center;
+  display: flex;
+  margin-top: 200px;
+  font-size: 150px;
 }
-img{
-  border-radius: 50%; /* Makes the image circular */
-  width: 500px; /* Fixed width */
-  height: 500px; /* Fixed height */
-  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  transition: transform 0.3s ease-in-out;
   margin-left: 50px;
   margin-right: 50px;
 }
-
 img:hover {
-  transform: scale(1.1); /* Increases size by 10% */
+  transform: scale(1.1);
 }
-h2{
+h2 {
   padding-left: 5px;
 }
-#about{
-  background-color:#f3b182;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 10px;
+#about {
+  background-color: #f3b182;
+  padding: 2px 0 2px 10px;
 }
-#contact{
-  background-color:transparent;
+#contact {
+  background-color: transparent;
   color: black;
 }
-p#about{
+p#about {
   padding-left: 100px;
 }
-h1.intro{
+h1.intro {
   display: flex;
-      gap: 5px; /* Space between letters */
-      font-size: 2.5rem;
-      padding-left: 50px;
+  gap: 5px;
+  font-size: 2.5rem;
+  padding-left: 50px;
 }
 h1 span {
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth scaling and color transition */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
 }
-
 h1 span:hover {
-  transform: scale(1.5); /* Increase size of the letter */
-  color: #541d08; /* Change color on hover (optional) */
+  transform: scale(1.5);
+  color: #541d08;
 }
-
-h1#skills{
-  color: #000000;
-}
-#skills{
-  color: #000000;
+h1#skills,
+#skills {
+  color: #000;
   margin-top: 10px;
 }
-
-
-#projects{
+#projects {
   background-color: transparent;
   color: #000;
+  margin-top: 100px;
 }
-#menu{
+#menu {
   display: flex;
   flex-direction: column;
   position: fixed;
   gap: 10px;
 }
-#profile{
+#profile {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -449,7 +337,95 @@ h1#skills{
   margin-bottom: 200px;
   padding-left: 150px;
 }
-#projects{
- 
- margin-top: 100px;
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .cards .card {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 30px;
+  }
+  h1.intro {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  .cards .card {
+    margin: 20px;
+    padding-left: 20px;
+  }
+  .container {
+    padding: 5px 10px;
+  }
+  .skill-box .title {
+    font-size: 12px;
+  }
+  .skill-per .tooltip {
+    font-size: 8px;
+  }
+  .example-2 .icon-content a {
+    width: 40px;
+    height: 40px;
+  }
+  .example-2 .icon-content a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Responsive bottom navbar */
+  #menu {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    overflow-x: auto;
+    padding: 10px;
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    display: none;
+  }
+  .button {
+    font-size: 0.8rem;
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .hover-text {
+    font-size: 0.8rem;
+  }
+  body {
+    padding-bottom: 80px;
+  }
 }
